@@ -1,10 +1,27 @@
 h2{
     margin: 0;
 }
+#set{
+    padding-top: 20px;
+}
 .about span{
     display: flex;
     justify-content: center;
 }
 .about p{
     width: 800px;
+}
+.resume{
+    /* position: absolute; */
+    /* top: 20px;
+    right: 20px; */
+    color: #1766dc;
+    font-size: 18px;
+    padding: 4px;
+    border: none;
+    background: #1766dc;
+    cursor: pointer;
+    transition: .3s ease all;
+    border-radius: 5px;
+    margin-bottom: 20px;
 }

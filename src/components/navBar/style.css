@@ -16,10 +16,17 @@
 }
 .navBar li{
     margin-right: 15px;
-    font-size: 20px;
-    color: antiquewhite;
+    font-size: 17px;
+    color: aliceblue;
 }
+.navBar li:hover{
+    color: rgb(173, 178, 182);
+}
+
 .navBar a{
     text-decoration: none;
     color: aliceblue;
+}
+.navBar a:hover{
+    color: rgb(173, 178, 182);
 }
