@@ -36,3 +36,39 @@
     transform: rotate(360deg);
   }
 }
+
+
+.header{
+  height: 100vh;
+  background: url("./components/img/3.jpg");
+  background-size:cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.img_me{
+  display: flex;
+  justify-content: center;
+}
+.img_me img{
+  height: 250px;
+  border-radius: 70px;
+}
+.title{
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title h1{
+  width: 300px;
+  border-bottom: 1px solid;
+}
+/* .title span{
+  border-top: 1px solid;
+} */
+
+.bodyApp{
+  background-color: #7a82914d;
+}

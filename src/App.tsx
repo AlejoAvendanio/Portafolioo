@@ -1,24 +1,40 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import NavBar from './components/navBar';
+import me from "./components/img/me.jpg"
+import Briefcase from './components/briefcase';
+import About from './components/About';
+import SetSkills from './components/setSkill';
+import Contact from './components/contact';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <NavBar/>
+      <header className='header'>
+        <div className='img_me'>
+          <img src={me} alt='Alejo Avendaño'></img>
+        </div>
+        <div className='title'>
+          <h1>Alejo Avendaño</h1>
+          <span>Full Stack Web Developer</span>
+        </div>
       </header>
+      <body className='bodyApp'>
+        <section>
+          <About/>
+        </section>
+        <section>
+          <SetSkills/>
+        </section>
+        <section>
+          <Briefcase/>
+        </section>
+        <section>
+          <Contact/>
+        </section>
+      </body>
     </div>
   );
 }
