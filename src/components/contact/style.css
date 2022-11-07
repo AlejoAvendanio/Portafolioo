@@ -1,0 +1,54 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+}
+.contactIcon{
+    width: 500px;
+    display: flex;
+    font-size: 40px;
+    justify-content: space-around;
+}
+
+a{
+    text-decoration:none ;
+    color: black;
+}
+.contentModal{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.contentModal form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.inputModal{
+    border-radius: 3px;
+    margin: 10px;
+    border: solid 1px;
+    width: 180px;
+    height: 20px;
+}
+.textModal{
+    width: 180px;
+    min-width: 180px;
+    max-width: 250px;
+    min-height: 90px;
+    max-height: 400px;
+}
+.send{
+    background-color: #1766dc;
+    color: #f3f3f3;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+    padding: 5px;
+    width: 60px;
+}
+.send:hover{
+    cursor: pointer;
+    background-color: #196deb;
+}

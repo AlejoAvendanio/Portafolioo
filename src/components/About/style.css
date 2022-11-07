@@ -1,0 +1,10 @@
+h2{
+    margin: 0;
+}
+.about span{
+    display: flex;
+    justify-content: center;
+}
+.about p{
+    width: 800px;
+}
