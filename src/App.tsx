@@ -18,7 +18,7 @@ function App() {
         </div>
         <div className='title'>
           <h1>Alejo Avendaño</h1>
-          <span>Full Stack Web Developer</span>
+          <span id='about'>Full Stack Web Developer</span>
         </div>
       </header>
       <body className='bodyApp'>

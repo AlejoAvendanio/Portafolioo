@@ -8,6 +8,7 @@ export default function NavBar() {
             <li><a href="#set">Skill set</a></li>
             <li><a href="#briefcase">Briefcase</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li><a href="./AlejoAvendaño1.pdf" download >Downdload resume</a></li>
         </ul>
     </div>
   )

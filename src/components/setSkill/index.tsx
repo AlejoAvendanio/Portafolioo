@@ -61,7 +61,7 @@ export default function SetSkills() {
     },[])
   return (
     <div>
-        <h2 id='set'>Skill Set</h2>
+        <h2>Skill Set</h2>
         <Skills skills={skills}/>
     </div>
   )
