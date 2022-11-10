@@ -8,3 +8,13 @@
     height: 150px;
     margin-top: 40px;
 }
+.set{
+    padding-top: 20px;
+}
+@media (max-width: 600px) {
+    .skills {
+        display:grid;
+        grid-template-columns: auto ;
+        justify-content: space-around;
+    }
+  }

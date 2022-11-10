@@ -26,7 +26,7 @@ export default function Contact() {
     <div className="contact">
         <h2 id="contact">Contact</h2>
         <div className='contactIcon'>
-        <a href="https://www.linkedin.com/in/alejo-avendaño-full-stack-web-developer-5420a620a/"><FontAwesomeIcon icon={faLinkedin} /></a>
+        <a className="link" href="https://www.linkedin.com/in/alejo-avendaño-5420a620a"><FontAwesomeIcon icon={faLinkedin} /></a>
         <FontAwesomeIcon className="email" onClick={()=>setStateModal(!stateModal)} icon={faEnvelope} />
         <Modals state={stateModal} setModal={setStateModal} type={"mail"}>
           <div className="contentModal">

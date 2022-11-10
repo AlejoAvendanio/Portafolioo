@@ -1,7 +1,8 @@
 h2{
     margin: 0;
 }
-#set{
+
+.h2About{
     padding-top: 20px;
 }
 .about span{
@@ -12,16 +13,30 @@ h2{
     width: 800px;
 }
 .resume{
-    /* position: absolute; */
-    /* top: 20px;
-    right: 20px; */
-    color: #1766dc;
-    font-size: 18px;
-    padding: 4px;
     border: none;
     background: #1766dc;
     cursor: pointer;
     transition: .3s ease all;
     border-radius: 5px;
     margin-bottom: 20px;
+    height: 30px;
+}
+.resume:hover{
+    cursor: pointer;
+    background-color: #196deb;
+}
+.resume a{
+    padding: 6px;
+    color: #f3f3f3;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 600px) {
+    .about p{
+        max-width: 300px;
+    }
+    }
+.arrow{
+    color: #f3f3f3;
+    padding-right: 6px;
 }
