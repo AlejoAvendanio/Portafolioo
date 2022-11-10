@@ -30,3 +30,32 @@
 .navBar a:hover{
     color: rgb(173, 178, 182);
 }
+
+@media screen and (min-width: 600px) {
+    .menu{
+        background-color: transparent;
+        color: transparent;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    body{
+        overflow-x: hidden;
+    }
+    .menu{
+        display: flex;
+        justify-content: end;    
+        padding-left: 20px;
+        font-size: 24px;
+    }
+    .navBar ul {
+        display:flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .navBar{
+        position: fixed;
+    }
+  }
+

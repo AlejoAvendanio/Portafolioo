@@ -4,12 +4,14 @@
     align-items:center ;
 }
 .contactIcon{
-    width: 500px;
+    width: 100%;
     display: flex;
     font-size: 40px;
     justify-content: space-around;
 }
-
+.link{
+    margin-top:-7px ;
+}
 a{
     text-decoration:none ;
     color: black;
