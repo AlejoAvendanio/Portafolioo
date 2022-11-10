@@ -34,7 +34,7 @@ export default function Briefcase() {
     },[])
   return (
     <div>
-        <h2 className='briefcase' id="briefcase">Briefcase</h2>
+        <h2 className='briefcase' id="briefcase">My projects</h2>
         <div className="">
             <Card proyects={proyect}/>
         </div>

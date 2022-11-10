@@ -24,14 +24,42 @@
 
 .header{
   height: 100vh;
-  background: url("./components/img/3.jpg");
-  background-size:cover;
+  background: #0c192c;
+  background-size:250%;
   display: flex;
+  z-index: 40;
   flex-direction: column;
   justify-content: center;
 }
+.bubbles{
+  position: relative;
+  display: flex;
+}
+.bubbles span{
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background: #4fc3dc;
+  margin: 0 4px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 10px #4fc3dc44, 0 0 50px #4fc3dc, 0 0 100px #4fc3dc;
+  animation: animate 15s linear infinite;
+  animation-duration: calc(150s/var(--i)) ;
+}
+.bubbles span:nth-child(even){
+  background: #7b9eac;
+  box-shadow: 0 0 0 10px #7b9eac44, 0 0 50px #7b9eac, 0 0 100px #7b9eac;
+}
+@keyframes animate{
+  0%{
+    transform: translateY(50vh) scale(0);
+  }100%{
+    transform: translateY(-50vh) scale(1);
+  }
+}
 
 .img_me{
+
   display: flex;
   justify-content: center;
 }
@@ -53,6 +81,21 @@
   .title h1{
     width: 250px;
     border-bottom: 1px solid;
+  }
+  .bubbles{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .bubbles span{
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    box-shadow: none;
+  }
+  .bubbles span:nth-child(even){
+    background: #7b9eac;
+    box-shadow: none;
   }
 }
 
