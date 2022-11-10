@@ -10,7 +10,7 @@ export default function NavBar() {
             <li><FontAwesomeIcon className="menu" icon={faBars}/></li>
             <li><a href="#about"> About me</a></li>
             <li><a href="#set">Skill set</a></li>
-            <li><a href="#briefcase">Briefcase</a></li>
+            <li><a href="#briefcase">My projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </div>
