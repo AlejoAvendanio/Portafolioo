@@ -1,3 +1,5 @@
+import "./style.css"
+
 interface Proyect {
     proyects:Array<{
         link:string,
@@ -14,7 +16,7 @@ export default function Card({proyects}: Proyect) {
                 return(
                     <section className="card">
                         <img className='mouse' src={proyec.img} alt="Proyect Food"></img>
-                        <h4><a href={proyec.link}>{proyec.title}</a></h4>
+                        <h4><a className="proyecName" href={proyec.link}>{proyec.title}</a></h4>
                     </section>
                 )
             })
