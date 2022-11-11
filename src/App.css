@@ -21,13 +21,13 @@
   }
 }
 
-
 .header{
   height: 100vh;
   background: #0c192c;
   background-size:250%;
   display: flex;
-  z-index: 40;
+  position: relative;
+  z-index: 20;
   flex-direction: column;
   justify-content: center;
 }

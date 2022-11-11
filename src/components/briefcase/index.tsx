@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react"
 import Card from "../card/index"
 import concatUs from "../img/concatus.png"
-import food from "../img/food.png"
+// import food from "../img/food.png"
 import "./style.css"
 const INITIAL_STATE = [
     {
@@ -10,11 +10,6 @@ const INITIAL_STATE = [
     title:"ConcatUs",
     img:concatUs
     },
-    {
-    link:"https://concatus.vercel.app",
-    title:"Food",
-    img:food
-    }
 ]
 interface Proyect {
     link:string,
