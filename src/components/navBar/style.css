@@ -84,6 +84,7 @@
         width: 150px;
         height: 100vh;
         background-color: #0c192c;
+        z-index: 100;
     }
     .navBar li{
         padding: 10px;

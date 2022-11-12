@@ -5,11 +5,12 @@ import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 export default function NavBar() {
     const [click, setClick] = useState(false)
-    const  menuRef= useRef()
+    const menuRef = useRef<any>(null)
     useEffect(()=>{
-        let handle = (e)=>{
+        let handle = (e: MouseEvent):void=>{
         console.log(e.target)
-        if(!menuRef?.current?.contains(e.target)){
+        const contains = menuRef?.current?.contains(e.target)
+        if(!contains){
             setClick(false)
         }
     }
@@ -22,10 +23,10 @@ export default function NavBar() {
     <div className={`navBar ${click ? "s" : ""}`} ref={menuRef}>
         <ul className={`links`}>
             <li><FontAwesomeIcon onClick={()=>setClick(!click)} className="menu" icon={faBars}/></li>
-            <li className={`lista ${click ? "active" : ""}`}><a href="#about"> About me</a></li>
-            <li className={`lista ${click ? "active" : ""}`}><a href="#set">Skill set</a></li>
-            <li className={`lista ${click ? "active" : ""}`}><a href="#briefcase">My projects</a></li>
-            <li className={`lista ${click ? "active" : ""}`}><a href="#contact">Contact</a></li>
+            <li className={`lista ${click ? "active" : ""}`}><a onClick={()=>setClick(!click)} href="#about"> About me</a></li>
+            <li className={`lista ${click ? "active" : ""}`}><a onClick={()=>setClick(!click)} href="#set">Skill set</a></li>
+            <li className={`lista ${click ? "active" : ""}`}><a onClick={()=>setClick(!click)} href="#briefcase">My projects</a></li>
+            <li className={`lista ${click ? "active" : ""}`}><a onClick={()=>setClick(!click)} href="#contact">Contact</a></li>
         </ul>
     </div>
     )
