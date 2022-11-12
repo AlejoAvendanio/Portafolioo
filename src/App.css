@@ -34,6 +34,7 @@
 .bubbles{
   position: relative;
   display: flex;
+  flex-wrap: wrap;
 }
 .bubbles span{
   position: relative;
