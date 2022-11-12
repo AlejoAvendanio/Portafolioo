@@ -3,12 +3,21 @@ import "./style.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faXmark } from '@fortawesome/free-solid-svg-icons'
 
-export default function Modal ({children,state,setModal,type}){
-    const menuRef = useRef()
+interface props {
+    children:any,
+    state:boolean,
+    setModal:(state:boolean)=>void,
+    type:string
+}
+
+
+export default function Modal ({children,state,setModal,type}:props){
+    const menuRef = useRef<any>(null)
+    console.log(menuRef)
     useEffect(()=>{
-        let handle = e=>{
-            console.log(e.target)
-            if(!menuRef.current.contains(e.target)){
+        let handle = (e:MouseEvent | null)=>{
+            console.log(e?.target)
+            if(!menuRef?.current?.contains(e?.target)){
                 setModal(false)
             }
         }
