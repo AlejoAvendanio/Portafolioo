@@ -33,7 +33,7 @@ export default function Modal ({children,state,setModal,type}:props){
             <div className='modal' >
                 <div className='contentModal' ref={menuRef}>
                     <div className='encabezado'>
-                        <h3>Contact with {type}</h3>
+                        <h3>{type}</h3>
                     </div>
                     <button onClick={()=>setModal(!state)} className='close'><FontAwesomeIcon className='x' icon={faXmark}/></button>
                 {
