@@ -8,6 +8,7 @@ import css from "../img/css.png"
 import nest from "../img/nest.png"
 import  postgres from "../img/Postgresql.png"
 import mongo from "../img/Mongo.png" 
+import git from "../img/git.png"
 import tp from "../img/Typescript.png"
 import Skills from './skills'
 interface Img {
@@ -49,6 +50,10 @@ const INITIAL_STATE = [
         img:tp,
         title:"TypeScript"
     },
+    {
+        img:git,
+        title:"git-flow"
+    }
 
 ]
 interface AppState {

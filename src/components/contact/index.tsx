@@ -9,7 +9,7 @@ export default function Contact() {
   const [stateModal, setStateModal] = useState(false)
   const [stateModal1, setStateModal1] = useState(false)
 
-  const sendEmail=(e)=>{
+  const sendEmail=(e:any)=>{
     e.preventDefault()
     emailjs.sendForm("service_61o99cz","template_8gt14h5",e.target,"juxU3SoKvaaoS7cHx")
     .then(res=>{
@@ -28,17 +28,17 @@ export default function Contact() {
         <div className='contactIcon'>
         <a className="link" href="https://www.linkedin.com/in/alejo-avendaño-5420a620a"><FontAwesomeIcon icon={faLinkedin} /></a>
         <FontAwesomeIcon className="email" onClick={()=>setStateModal(!stateModal)} icon={faEnvelope} />
-        <Modals state={stateModal} setModal={setStateModal} type={"mail"}>
+        <Modals state={stateModal} setModal={setStateModal} type={"Contact with mail"}>
           <div className="contentModal">
             <form onSubmit={sendEmail}>
-              <input className="inputModal" name="email"type="email" placeholder="email"></input>
+              <input className="inputModal" name="email" type="email" placeholder="email"></input>
               <textarea placeholder="content" name="content" className="textModal"></textarea>
               <button className="send">Send</button>
             </form>
           </div>
         </Modals>
         <FontAwesomeIcon className="email" onClick={()=>setStateModal1(!stateModal1)}  icon={faWhatsapp}/>
-        <Modals state={stateModal1} setModal={setStateModal1} type={"whatsapp"}>
+        <Modals state={stateModal1} setModal={setStateModal1} type={"Contact with whatsapp"}>
           <div className="contentModalNumber">Number phone: <b>+54 2615445394</b></div>
         </Modals>
         </div>
