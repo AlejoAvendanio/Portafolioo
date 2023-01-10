@@ -8,14 +8,14 @@
     display: flex;
     font-size: 40px;
     justify-content: space-around;
-    background: #0c192c;
-    color: #f3f3f3;
 }
 .link{
     margin-top:-7px ;
-    color: #f3f3f3;
 }
-
+a{
+    text-decoration:none ;
+    color: black;
+}
 .contentModal{
     align-items: center;
     display: flex;
