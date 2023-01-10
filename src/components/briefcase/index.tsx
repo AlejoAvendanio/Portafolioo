@@ -18,7 +18,7 @@ const INITIAL_STATE:Proyect[] = [
         title:"Ecommer tecnical",
         img:next,
         front:["React","TypeScript","NextJS","Fetch"],
-        back:[],
+        back:[]
     }
 ]
 
