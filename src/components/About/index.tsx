@@ -12,6 +12,7 @@ export default function About() {
             </p>
         </span>
         <button id='set' className='resume'><a href="./resume.pdf" download >Resume</a> <FontAwesomeIcon className='arrow' icon={faArrowsDownToLine}/></button>
+    
     </div>
   )
 }
