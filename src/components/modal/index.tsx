@@ -13,10 +13,8 @@ interface props {
 
 export default function Modal ({children,state,setModal,type}:props){
     const menuRef = useRef<any>(null)
-    console.log(menuRef)
     useEffect(()=>{
         let handle = (e:MouseEvent | null)=>{
-            console.log(e?.target)
             if(!menuRef?.current?.contains(e?.target)){
                 setModal(false)
             }

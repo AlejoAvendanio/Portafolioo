@@ -10,7 +10,7 @@ export default function Skills({skills}:Img) {
   return (
     <div className='skills'>
         {
-            skills?.map(e=><img src={e.img} alt={e.title} ></img>)
+            skills.map(e=><img src={e.img} alt={e.title} ></img>)
         }
     </div>
   )

@@ -1,37 +1,38 @@
 // import React from 'react'
 import { useEffect, useState } from "react"
-import Card from "../card/index"
+import Card, { Proyect } from "../card/index"
 import concatUs from "../img/concatus.png"
+import next from "../img/next.png"
 // import food from "../img/food.png"
 import "./style.css"
-const INITIAL_STATE = [
+const INITIAL_STATE:Proyect[] = [
     {
-    link:"https://concatus.vercel.app",
-    title:"ConcatUs",
-    img:concatUs
+        link:"https://concatus.vercel.app",
+        title:"ConcatUs",
+        img:concatUs,
+        front: ["JavaScript","React","Redux","Material UI","CSS","Axios"],
+        back:["MongoDB","Mongoose","Express","TypeScript","Firebase","Cloudinary","Socket.io","Paypal API","Node Mailer"]
     },
+    {
+        link:"https://ecommer-next.vercel.app",
+        title:"Ecommer tecnical",
+        img:next,
+        front:["React","TypeScript","NextJS","Fetch"],
+        back:[]
+    }
 ]
-interface Proyect {
-    link:string,
-    title:string,
-    img:string
-}
-
-interface AppState {
-    proyects: Proyect[]
-} 
 
 
 export default function Briefcase() {
-    const [proyect, setProyect] = useState<AppState["proyects"]>([])
-    useEffect(()=>{
-        setProyect(INITIAL_STATE)
-    },[])
+    const proyect:Proyect[] = INITIAL_STATE
+
   return (
     <div>
         <h2 className='briefcase' id="briefcase">My projects</h2>
-        <div className="">
-            <Card proyects={proyect}/>
+        <div className="" style={{display:"flex",justifyContent:"space-around"}}>
+            {
+                proyect.map((e:Proyect)=><Card proyects={e}/>)
+            }
         </div>
     </div>
   )
