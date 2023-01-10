@@ -24,7 +24,7 @@ export default function Contact() {
   }
   return (
     <div className="contact">
-        <h2 id="contact">Contact</h2>
+        <h2 id="contact" style={{textDecoration:"underLine"}}>Contact</h2>
         <div className='contactIcon'>
         <a className="link" href="https://www.linkedin.com/in/alejo-avendaño-5420a620a"><FontAwesomeIcon icon={faLinkedin} /></a>
         <FontAwesomeIcon className="email" onClick={()=>setStateModal(!stateModal)} icon={faEnvelope} />
