@@ -31,7 +31,7 @@ export default function Briefcase() {
         <h2 className='briefcase' id="briefcase" style={{textDecoration:"underLine"}}>My projects</h2>
         <div className="" style={{display:"flex",justifyContent:"space-around", flexWrap:"wrap"}}>
             {
-                proyect.map((e:Proyect)=><Card proyects={e}/>)
+                proyect.map((e:Proyect)=><Card  proyects={e}/>)
             }
         </div>
     </div>

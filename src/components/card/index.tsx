@@ -19,12 +19,12 @@ const Card:React.FC<Props> = ({proyects})=> {
   const [stateModal, setStateModal] = useState(false)
 
   return (
-    <div className='proyects'>
+    <div className='proyects' style={{marginBottom:20}}>
                     <section className="card">
                         
                         <img className='mouse' src={proyects.img} alt="Proyect Food"></img>
                         <h4>
-                            <a className="proyecName" href={proyects.link}>{proyects.title}</a>
+                            <a className="proyecName"style={{color:"black"}} href={proyects.link}>{proyects.title}</a>
                             <FontAwesomeIcon style={{fontSize:"20px", marginLeft:"10px", color:"#000"}}  onClick={()=>setStateModal(!stateModal)} icon={faCircleInfo}/>
                                 <Modal type={"Used Technologies"} setModal={setStateModal} state={stateModal}>
                                     <ul>
