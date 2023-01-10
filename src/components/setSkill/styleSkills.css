@@ -21,8 +21,14 @@
 }
 @media (max-width: 600px) {
     .skills {
-        display:grid;
-        grid-template-columns: auto ;
+        display:flex;
+        flex-wrap: wrap;
         justify-content: space-around;
+    }
+    .skills img {
+        width: 130px;
+        height: 130px;
+        margin-top: 40px;
+        border-radius: 8px;
     }
   }

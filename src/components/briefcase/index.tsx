@@ -15,7 +15,7 @@ const INITIAL_STATE:Proyect[] = [
     },
     {
         link:"https://ecommer-next.vercel.app",
-        title:"Ecommer tecnical",
+        title:"Ecommer",
         img:next,
         front:["React","TypeScript","NextJS","Fetch"],
         back:[]
