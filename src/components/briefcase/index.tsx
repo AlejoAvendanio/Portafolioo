@@ -3,6 +3,7 @@ import { useEffect, useState } from "react"
 import Card, { Proyect } from "../card/index"
 import concatUs from "../img/concatus.png"
 import next from "../img/next.png"
+import gipfy from "../img/giphy2.png"
 // import food from "../img/food.png"
 import "./style.css"
 const INITIAL_STATE:Proyect[] = [
@@ -19,6 +20,13 @@ const INITIAL_STATE:Proyect[] = [
         img:next,
         front:["React","TypeScript","NextJS","Fetch"],
         back:[]
+    },
+    {
+        link:"https://giffy-cyan-six.vercel.app",
+        title:"Giphy clone",
+        img:gipfy,
+        front:["React","TypeScript","Fetch"],
+        back:["TypeScript","NodeJs","Json Web Token","MongoDB"]
     }
 ]
 
