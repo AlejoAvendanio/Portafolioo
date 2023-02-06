@@ -25,8 +25,8 @@ const INITIAL_STATE:Proyect[] = [
         link:"https://giffy-cyan-six.vercel.app",
         title:"Giphy clone",
         img:gipfy,
-        front:["React","TypeScript","Fetch"],
-        back:["TypeScript","NodeJs","Json Web Token","MongoDB"]
+        front:["React","TypeScript","Fetch","Socket.io"],
+        back:["TypeScript","NodeJs","Json Web Token","MongoDB","Mongoose","Socket.io"]
     }
 ]
 
