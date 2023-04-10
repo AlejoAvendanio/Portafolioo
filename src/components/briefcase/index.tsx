@@ -8,7 +8,7 @@ import gipfy from "../img/giphy2.png"
 import "./style.css"
 const INITIAL_STATE:Proyect[] = [
     {
-        link:"https://concatus.vercel.app",
+        link:"https://social-net-ten.vercel.app",
         title:"ConcatUs",
         img:concatUs,
         front: ["JavaScript","React","Redux","Material UI","CSS","Axios"],
